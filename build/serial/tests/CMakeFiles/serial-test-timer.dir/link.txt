@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o  -o /home/pi/racecar/devel/lib/serial/serial-test-timer   -L/home/pi/racecar/build/gtest  -Wl,-rpath,/home/pi/racecar/build/gtest:/home/pi/racecar/build/gtest/lib:/home/pi/racecar/devel/lib ../../gtest/lib/libgtest.so /home/pi/racecar/devel/lib/libserial.so -lpthread -lrt -lpthread 

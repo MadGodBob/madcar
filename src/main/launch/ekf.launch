@@ -1,0 +1,13 @@
+<launch>
+  <include file="$(find motor_drive)/launch/motor_driver.launch" />
+  <include file="$(find imu_launch)/launch/imu_msg.launch" />  
+
+  <!-- 启动 EKF -->
+  <node pkg="robot_localization"
+        type="ekf_localization_node"
+        name="ekf_filter_node"
+        output="screen"
+        clear_params="true">
+    <rosparam file="$(find main)/config/ekf.yaml" command="load" />
+  </node>
+</launch>

@@ -1,0 +1,26 @@
+# frames
+base_frame: base_link
+odom_frame: odom
+map_frame: map
+
+# map resolution (m/cell)
+delta: 0.05
+
+# update thresholds
+linearUpdate: 0.20
+angularUpdate: 0.10
+
+# laser range (set to your lidar max range)
+maxUrange: 8.0
+maxRange: 8.0
+
+# scan matching quality
+minimumScore: 50
+particles: 30
+
+# scan matcher params (usually OK as default-ish values)
+sigma: 0.05
+kernelSize: 1
+lstep: 0.05
+astep: 0.05
+iterations: 5

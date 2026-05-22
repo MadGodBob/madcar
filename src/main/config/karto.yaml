@@ -1,0 +1,14 @@
+slam_karto:
+  # Frames
+  odom_frame: odom
+  map_frame: map
+  base_frame: base_link
+
+  # Karto tuning (先用默认风格，能跑再细调)
+  throttle_scans: 1
+  minimum_travel_distance: 0.2
+  minimum_travel_heading: 0.1
+
+  # Correlation/scan-matching related
+  use_scan_matching: true
+  max_covariance: 0.01

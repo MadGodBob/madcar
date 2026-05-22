@@ -1,0 +1,9 @@
+<launch>
+  <arg name="scan_topic" default="/scan"/>
+
+  <!-- 启动 gmapping，并加载配置 -->
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    <rosparam command="load" file="$(find main)/config/gmapping.yaml" />
+    <remap from="scan" to="$(arg scan_topic)"/>
+  </node>
+</launch>

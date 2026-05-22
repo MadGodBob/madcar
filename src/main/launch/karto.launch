@@ -1,0 +1,13 @@
+<launch>
+  <arg name="scan_topic" default="/scan"/>
+  <arg name="odom_topic" default="/odometry/filtered"/>
+
+  <!-- 2) Karto SLAM -->
+  <node pkg="slam_karto" type="slam_karto" name="slam_karto" output="screen">
+    <rosparam command="load" file="$(find main)/config/karto.yaml" />
+
+    <!-- 关键：让 karto 订阅到你的 odom filtered -->
+    <remap from="scan" to="$(arg scan_topic)"/>
+    <remap from="odom" to="$(arg odom_topic)"/>
+  </node>
+</launch>
