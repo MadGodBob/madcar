@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="xbox_drive" type="xbox_driver_node.py" name="xbox_driver" output="screen">
+    <param name="v_max" value="0.5"/>
+    <param name="turn_k" value="5.0"/>
+  </node>
+</launch>

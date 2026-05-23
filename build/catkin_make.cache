@@ -1,2 +1,2 @@
-ls01x
--DCATKIN_DEVEL_PREFIX=/home/pi/racecar/devel -DCMAKE_INSTALL_PREFIX=/home/pi/racecar/install -DCATKIN_WHITELIST_PACKAGES=ls01b_v2 -G Unix Makefiles
+xbox_drive
+-DCATKIN_DEVEL_PREFIX=/home/pi/racecar/devel -DCMAKE_INSTALL_PREFIX=/home/pi/racecar/install -DCATKIN_WHITELIST_PACKAGES=xbox_drive -G Unix Makefiles

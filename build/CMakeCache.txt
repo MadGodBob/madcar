@@ -47,7 +47,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=ls01b_v2
+CATKIN_WHITELIST_PACKAGES:STRING=xbox_drive
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -559,7 +559,7 @@ interactive_markers_DIR:PATH=/opt/ros/noetic/share/interactive_markers/cmake
 laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
+lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 
 //Value Computed by CMake
 ls01b_v2_BINARY_DIR:STATIC=/home/pi/racecar/build/ls01x
@@ -704,6 +704,12 @@ urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
+
+//Value Computed by CMake
+xbox_drive_BINARY_DIR:STATIC=/home/pi/racecar/build/xbox_drive
+
+//Value Computed by CMake
+xbox_drive_SOURCE_DIR:STATIC=/home/pi/racecar/src/xbox_drive
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake

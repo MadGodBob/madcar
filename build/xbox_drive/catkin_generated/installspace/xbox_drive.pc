@@ -1,0 +1,8 @@
+prefix=/home/pi/racecar/install
+
+Name: xbox_drive
+Description: Description of xbox_drive
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
